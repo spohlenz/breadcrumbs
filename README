@@ -1,0 +1,20 @@
+Breadcrumbs
+===========
+
+Really simple breadcrumbs for your rails app.
+
+
+Example
+=======
+
+In your controller or view:
+  
+  add_breadcrumb "My site", '/' # Linked breadcrumb
+  add_breadcrumb "Edit"         # Breadcrumb without link
+
+In your view:
+
+  <%= breadcrumbs %>
+
+
+Copyright (c) 2008 Sam Pohlenz, released under the MIT license
