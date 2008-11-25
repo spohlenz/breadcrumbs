@@ -15,7 +15,7 @@ module BreadCrumbs
   
   module HelperMethods
     def breadcrumbs(separator=' > ')
-      content_tag :p, @breadcrumbs.map { |text, url|
+      content_tag :p, controller.breadcrumbs.map { |text, url|
         url ? link_to(text, url) : text
       }.join(separator), :class => 'breadcrumbs'
     end
